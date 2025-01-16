@@ -10,19 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
     <header>
         <nav>
             <div class="logo">KP strony</div>
             <ul class="nav-links">
-                <li><a href="#hero">Strona Główna</a></li> <!-- Link to Hero Section -->
-                <li><a href="#services">Oferta</a></li>    <!-- Link to Services Section -->
-                <li><a href="#contact">Kontakt</a></li>    <!-- Link to Kontakt Section -->
+                <li><a href="#hero">Strona Główna</a></li> 
+                <li><a href="#services">Oferta</a></li>  
+                <li><a href="#contact">Kontakt</a></li>  
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section (Welcome Message) -->
     <section id="hero" class="hero">
         <div class="hero-content">
             <h1>Witamy w KP strony</h1>
@@ -31,7 +29,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
       <br>
       <h2 class="fade-in">Oferta</h2>
@@ -55,7 +52,6 @@
         </div>
     </section>
 
-    <!-- Kontakt Section -->
     <section id="contact" class="contact">
       <br>
         <h2 class="fade-in">Kontakt</h2>
@@ -63,15 +59,12 @@
         <p><a href="mailto:kpec.business@gmail.com">kpec.business@gmail.com</a></p> <br>
         <h4><i class="fas fa-phone-alt"></i> Telefon: </h4>
         <p><a href="tel:+48798402047">798 402 047</a></p>
-        <!-- Add a contact form or information here -->
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 KP strony - projektowanie stron internetowych</p>
     </footer>
     <script>
-      // Function to check if an element is in the viewport
       function checkVisibility() {
           const elements = document.querySelectorAll('.fade-in');
           elements.forEach(element => {
@@ -81,12 +74,10 @@
               }
           });
       }
-  
-      // Check visibility when scrolling and when the page loads
+
       window.addEventListener('scroll', checkVisibility);
       window.addEventListener('load', checkVisibility);
   
-      // Initial check
       checkVisibility();
   </script>
   
