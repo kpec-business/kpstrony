@@ -56,8 +56,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: url('zdjbg.jpg') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(to bottom right, #1B263B, #3E8EED);
   height: 100vh;
   display: flex;
   justify-content: center;
