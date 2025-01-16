@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Strony - Projektowanie Stron Internetowych</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">KP strony</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Strona Główna</a></li> <!-- Link to Hero Section -->
+                <li><a href="#services">Oferta</a></li>    <!-- Link to Services Section -->
+                <li><a href="#contact">Kontakt</a></li>    <!-- Link to Kontakt Section -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Welcome Message) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Witamy w KP strony</h1>
+            <p>Twoje kompleksowe rozwiązanie w tworzeniu wyjątkowych stron internetowych.</p>
+            <a href="#services" class="cta-button">Zobacz ofertę</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <br>
+      <h2 class="fade-in">Oferta</h2>
+        <p>Oferujemy indywidualne usługi projektowania stron internetowych, rozwoju oraz obsługi stron, które rozwiną twoją działalność. </p>
+        <div class="service-boxes">
+            <div class="service-box">
+              <i class="fas fa-laptop-code icon"></i>
+                <h3>Projektowanie strony</h3>
+                <p>Stworzymy piękną i łatwą w obsłudze stronę internetową dla Ciebie.</p>
+            </div>
+            <div class="service-box">
+              <i class="fas fa-cogs icon"></i>
+                <h3>Obsługa strony</h3>
+                <p>Zadbamy o domenę, hosting, certyfikaty i będziemy obsługiwać stworzoną stronę w razie potrzeby.</p>
+            </div>
+            <div class="service-box">
+              <i class="fas fa-exchange-alt icon"></i>
+                <h3>Przenoszenie domeny</h3>
+                <p>Przeniesiemy domenę którą posiadasz na Twoją nową stronę.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="contact" class="contact">
+      <br>
+        <h2 class="fade-in">Kontakt</h2>
+        <h4><i class="fas fa-envelope"></i> E-Mail: </h4>
+        <p><a href="mailto:kpec.business@gmail.com">kpec.business@gmail.com</a></p> <br>
+        <h4><i class="fas fa-phone-alt"></i> Telefon: </h4>
+        <p><a href="tel:+48798402047">798 402 047</a></p>
+        <!-- Add a contact form or information here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 KP strony - projektowanie stron internetowych</p>
+    </footer>
+    <script>
+      // Function to check if an element is in the viewport
+      function checkVisibility() {
+          const elements = document.querySelectorAll('.fade-in');
+          elements.forEach(element => {
+              const rect = element.getBoundingClientRect();
+              if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                  element.classList.add('visible');
+              }
+          });
+      }
+  
+      // Check visibility when scrolling and when the page loads
+      window.addEventListener('scroll', checkVisibility);
+      window.addEventListener('load', checkVisibility);
+  
+      // Initial check
+      checkVisibility();
+  </script>
+  
+</body>
+</html>
